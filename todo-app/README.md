@@ -1,16 +1,57 @@
-# React + Vite
+# TO-DO App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web para la administración de tareas personales, desarrollada como prueba técnica.
+Permite a cada usuario gestionar sus propias tareas de forma segura, con notificaciones automáticas y sincronización en tiempo real.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tecnologías utilizadas
 
-## React Compiler
+- **React** (Vite)
+- **Firebase Authentication**
+- **Firebase Firestore**
+- **Tailwind CSS**
+- **JavaScript (ES6+)**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Funcionalidades principales
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Registro e inicio de sesión de usuarios
+- Gestión de tareas (crear, editar, completar y eliminar)
+- Prioridades de tareas (baja, media, alta)
+- Clasificación por estado:
+  - Todas
+  - Pendientes
+  - Realizadas
+- Ordenamiento por fecha, hora y prioridad
+- Notificaciones automáticas:
+  - 10 minutos antes de la tarea
+  - En el momento exacto de la tarea
+- Indicadores visuales:
+  - Color amarillo cuando la tarea está próxima
+  - Color rojo cuando la tarea está vencida
+- Interfaz moderna, responsiva e intuitiva
+- Persistencia de datos en tiempo real por usuario
+
+---
+
+## Seguridad y usuarios
+
+- Autenticación gestionada mediante Firebase Authentication
+- Cada usuario solo puede acceder a sus propias tareas
+- Datos almacenados de forma segura en Firestore
+
+---
+
+## Instalación y ejecución local
+
+```bash
+# Clonar repositorio
+git clone <URL_DEL_REPOSITORIO>
+
+# Instalar dependencias
+npm install
+
+# Ejecutar proyecto
+npm run dev
