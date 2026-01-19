@@ -48,7 +48,7 @@ Permite a cada usuario gestionar sus propias tareas de forma segura, con notific
 
 ```bash
 # Clonar repositorio
-git clone <URL_DEL_REPOSITORIO>
+git clone <https://github.com/anasaavd/todo-app.git>
 
 # Instalar dependencias
 npm install
